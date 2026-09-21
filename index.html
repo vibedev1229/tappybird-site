@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tappy Bird - One Tap Arcade Game for iPhone</title>
+<meta name="description" content="Tappy Bird is a one tap arcade flyer. Thread the pipes, beat your best score, and unlock nine bird skins across two art styles. Free on the App Store and Google Play.">
+<link rel="icon" type="image/png" href="assets/icon.png">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Tappy Bird - One Tap Arcade Game">
+<meta property="og:description" content="Tap to fly, dodge the pipes, beat your best score. Nine bird skins, two art styles, no account needed.">
+<meta property="og:image" content="https://vibedev1229.github.io/tappybird-site/assets/og.jpg">
+<meta property="og:url" content="https://vibedev1229.github.io/tappybird-site/">
+<meta name="twitter:card" content="summary_large_image">
+
+<style>
+    * { box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+           margin: 0; line-height: 1.65; color: #2b2b2b; background: #fafafb; }
+    a { color: #4f46e5; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 0 22px; }
+
+    header { background-image: url("assets/hero.jpg"); background-size: cover;
+             background-position: center; padding: 64px 0 72px; text-align: center; }
+    header .icon { width: 132px; height: 132px; border-radius: 30px; display: block;
+                   margin: 0 auto 18px; box-shadow: 0 10px 30px rgba(20,60,88,.28); }
+    header h1 { margin: 0 0 6px; font-size: 2.6rem; color: #fff; letter-spacing: .02em;
+                text-shadow: 0 3px 10px rgba(20,60,88,.55); }
+    header p.tag { margin: 0 0 26px; font-size: 1.15rem; color: #f4fbff; font-weight: 600;
+                   text-shadow: 0 2px 8px rgba(20,60,88,.55); }
+
+    .stores { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+    .store { display: inline-block; background: #111; color: #fff; padding: 12px 22px;
+             border-radius: 12px; font-weight: 600; font-size: .98rem;
+             box-shadow: 0 6px 18px rgba(20,60,88,.25); }
+    .store:hover { text-decoration: none; background: #2b2b2b; }
+    .store small { display: block; font-weight: 400; font-size: .74rem; opacity: .75; }
+
+    section { padding: 44px 0 8px; }
+    h2 { font-size: 1.35rem; color: #1f2933; margin: 0 0 16px; }
+    .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+                gap: 16px; padding: 0; list-style: none; margin: 0; }
+    .features li { background: #fff; border: 1px solid #ececf1; border-radius: 12px;
+                   padding: 16px 18px; font-size: .96rem; }
+    .features strong { display: block; color: #4f46e5; margin-bottom: 3px; }
+
+    .shots { display: flex; gap: 14px; overflow-x: auto; padding: 4px 0 18px; }
+    .shots img { width: 208px; flex: 0 0 auto; border-radius: 16px; border: 1px solid #e3e5ec;
+                 box-shadow: 0 6px 18px rgba(20,60,88,.12); }
+
+    footer { margin-top: 34px; padding: 26px 0 40px; border-top: 1px solid #ececf1;
+             font-size: .92rem; color: #52606d; }
+    footer a { margin-right: 14px; }
+    .fine { margin-top: 14px; font-size: .86rem; color: #7b8794; }
+</style>
+</head>
+<body>
+
+<header>
+    <img class="icon" src="assets/icon.png" alt="Tappy Bird app icon">
+    <h1>Tappy Bird</h1>
+    <p class="tag">Tap to fly. Dodge the pipes. Beat your best.</p>
+    <div class="stores">
+        <a class="store" href="https://apps.apple.com/app/id6813172413">Download on the App Store<small>iPhone, iOS 16 and later</small></a>
+        <a class="store" href="https://play.google.com/store/apps/details?id=com.tappybird.game">Get it on Google Play<small>Android 6.0 and later</small></a>
+    </div>
+</header>
+
+<div class="wrap">
+
+    <section>
+        <h2>One tap. That is the whole control scheme.</h2>
+        <p>The bird falls, every tap flaps it higher, and the only thing between you and a new best
+        score is an endless run of gap pipes. Simple to start, hard to put down. It plays fully
+        offline, needs no account, and every bird can be earned by playing.</p>
+    </section>
+
+    <section>
+        <h2>What is in it</h2>
+        <ul class="features">
+            <li><strong>Two complete art styles</strong>A smooth Modern look and a retro Pixel mode, switchable any time in Settings.</li>
+            <li><strong>Nine bird skins</strong>Classic, Parrot, Penguin, Eagle, Robot, Ninja, Dragon, Rainbow and Phoenix, unlocked with coins you earn.</li>
+            <li><strong>Skill fair pipes</strong>Every gap is placed somewhere the bird can actually reach, so a run never ends on an impossible spawn.</li>
+            <li><strong>Game Center</strong>A global leaderboard and five achievements at scores of 1, 10, 25, 50 and 100.</li>
+            <li><strong>Plays offline</strong>No sign up, no login, no personal details. Your progress stays on your device.</li>
+            <li><strong>Optional purchases</strong>Remove Ads and a Premium Pack if you want them. Nothing is locked behind them.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Screenshots</h2>
+        <div class="shots">
+            <img src="assets/shot-menu.jpg" alt="Tappy Bird main menu showing the selected bird">
+            <img src="assets/shot-game.jpg" alt="Gameplay in the Modern art style">
+            <img src="assets/shot-pixel.jpg" alt="Gameplay in the retro Pixel art style">
+            <img src="assets/shot-shop.jpg" alt="The shop, showing bird skins that can be unlocked with coins">
+        </div>
+    </section>
+
+    <footer>
+        <p>
+            <a href="https://vibedev1229.github.io/tappybird-privacy/support.html">Support</a>
+            <a href="https://vibedev1229.github.io/tappybird-privacy/ios.html">Privacy (iOS)</a>
+            <a href="https://vibedev1229.github.io/tappybird-privacy/">Privacy (Android)</a>
+            <a href="mailto:vibedev1229@gmail.com">vibedev1229@gmail.com</a>
+        </p>
+        <p class="fine">
+            Developed by VibeDeV, published by VIBECORE DIGITAL.
+            Apple, the Apple logo, App Store and Game Center are trademarks of Apple Inc.
+            Google Play and the Google Play logo are trademarks of Google LLC.
+        </p>
+    </footer>
+
+</div>
+
+</body>
+</html>
