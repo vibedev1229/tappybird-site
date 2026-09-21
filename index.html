@@ -31,12 +31,19 @@
     header p.tag { margin: 0 0 26px; font-size: 1.15rem; color: #f4fbff; font-weight: 600;
                    text-shadow: 0 2px 8px rgba(20,60,88,.55); }
 
-    .stores { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
-    .store { display: inline-block; background: #111; color: #fff; padding: 12px 22px;
-             border-radius: 12px; font-weight: 600; font-size: .98rem;
-             box-shadow: 0 6px 18px rgba(20,60,88,.25); }
-    .store:hover { text-decoration: none; background: #2b2b2b; }
-    .store small { display: block; font-weight: 400; font-size: .74rem; opacity: .75; }
+    /* Official store badges, unmodified. Google's asset carries 33% built-in clear space, so it
+       has to render taller than Apple's to look the same size: 54px of Apple artwork matches an
+       80px Google file. Sizing by height keeps both crisp, the Apple badge being vector. */
+    .stores { display: flex; gap: 6px; justify-content: center; align-items: center;
+              flex-wrap: wrap; }
+    .stores a { display: inline-flex; align-items: center; transition: opacity .15s ease; }
+    .stores a:hover { opacity: .82; text-decoration: none; }
+    .badge-apple { height: 54px; width: auto; display: block;
+                   filter: drop-shadow(0 6px 14px rgba(20,60,88,.3)); }
+    .badge-google { height: 80px; width: auto; display: block;
+                    filter: drop-shadow(0 6px 14px rgba(20,60,88,.28)); }
+    .avail { margin: 6px 0 0; font-size: .88rem; color: #f2fbff; font-weight: 600;
+             text-shadow: 0 2px 8px rgba(20,60,88,.6); }
 
     section { padding: 44px 0 8px; }
     h2 { font-size: 1.35rem; color: #1f2933; margin: 0 0 16px; }
@@ -63,9 +70,14 @@
     <h1>Tappy Bird</h1>
     <p class="tag">Tap to fly. Dodge the pipes. Beat your best.</p>
     <div class="stores">
-        <a class="store" href="https://apps.apple.com/app/id6813172413">Download on the App Store<small>iPhone, iOS 16 and later</small></a>
-        <a class="store" href="https://play.google.com/store/apps/details?id=com.tappybird.game">Get it on Google Play<small>Android 6.0 and later</small></a>
+        <a href="https://apps.apple.com/app/id6813172413">
+            <img class="badge-apple" src="assets/badge-appstore.svg" alt="Download on the App Store">
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=com.tappybird.game">
+            <img class="badge-google" src="assets/badge-googleplay.png" alt="Get it on Google Play">
+        </a>
     </div>
+    <p class="avail">Free on iPhone (iOS 16 and later) and Android 6.0 and later</p>
 </header>
 
 <div class="wrap">
