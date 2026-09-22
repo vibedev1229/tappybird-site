@@ -1,6 +1,8 @@
 # tappybird-site
 
-Marketing page for Tappy Bird, hosted via GitHub Pages.
+Marketing page, hosted via GitHub Pages. The game is **Pixel and Plume** on the
+App Store and **Tappy Bird** on Google Play: the iOS release was renamed after an App Store
+4.3(a) rejection, and the repo name is kept as-is so the published URL does not break.
 
 Live: https://vibedev1229.github.io/tappybird-site/
 
